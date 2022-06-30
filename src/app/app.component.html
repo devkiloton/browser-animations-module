@@ -1,0 +1,31 @@
+<app-page>
+  <div class="container">
+    <div class="form">
+      <h1 [@formState200]="position">Form</h1>
+      <app-text-input placeholderText="Name" [@formState200]="position">
+      </app-text-input>
+      <app-text-input placeholderText="Email" [@formState350]="position">
+      </app-text-input>
+      <app-text-input placeholderText="Password" [@formState500]="position">
+      </app-text-input>
+      <app-text-input
+        placeholderText="Confirm Password"
+        [@formState650]="position"
+      >
+      </app-text-input>
+      <button
+        [@formState800]="position"
+        (click)="changePosition('move')"
+        type="button"
+        title="Send"
+      >
+        Send
+      </button>
+    </div>
+    <a
+      href="https://www.youtube.com/channel/UCb2qfrlxS0kK9vca_fpjdNQ?sub_confirmation=1"
+    >
+      <img [@scaleImage]="position" src="../assets/subscribe.png" />
+    </a>
+  </div>
+</app-page>
